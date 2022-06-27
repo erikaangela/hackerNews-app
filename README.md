@@ -1,3 +1,18 @@
+# Project Goals
+
+Build a HackerNews.com clone using the News API.
+Must include main news feed, search functionality, and "Popular This Week" section.
+
+Getting Started
+
+1. At the minimum, there should be three components: searchbar, main news feed, and popular news on the side.
+2. The main thing you'll be doing in this project is making GET requests to get information from the News API, and then displaying the results in your component.
+3. You'll make two different API requests, one to get the top news on the site (using the "top-headlines" endpoint in the documentation), and one to search everything about whatever search input the user wants to search by, using the "everything" endpoint.
+4. To search whatever the user inputs, you can use the "everything" endpoint/url and pass in a value for "q" that's in the url string.
+5. That "q" stands for "query" and the value you set it equal to is what the API is going to return search results for, so that's where you put the search value you get from the user.
+6. Keep in mind, when the app first loads, there should be news information displayed already, so you can put a default value for "q" when using the "everything" endpoint with whatever topic you want on the homepage when your app first loads. Google "javascript default parameters".
+7. Also, when clicks to view an article from your search results, you should open up the url to read the full article in a new tab.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
