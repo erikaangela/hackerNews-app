@@ -11,20 +11,19 @@ class App extends React.Component {
         <Router>
           <div>
             <Header />
-            <Routes>
-              <Route path="/" exact element={<Feed />} />
-              <Route>404 Not Found</Route>
-            </Routes>
+            <div className="ui internally celled grid">
+              <div className="ten wide column">
+                <Routes>
+                  <Route path="/" exact element={<Feed />} />
+                  <Route>404 Not Found</Route>
+                </Routes>
+              </div>
+              <div className="four wide column">
+                <Sidebar />
+              </div>
+            </div>
           </div>
         </Router>
-        {/* <div className="ui internally celled grid">
-          <div className="ten wide column">
-            <Feed />
-          </div>
-          <div className="four wide column">
-            <Sidebar />
-          </div>
-        </div> */}
       </div>
     );
   }

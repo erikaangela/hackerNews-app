@@ -1,13 +1,13 @@
 import { ActionTypes } from "../actions/types";
 
 const initialState = {
-  articles: [{ id: 1, title: "Erika", category: "programmer" }],
+  articles: [],
 };
 
 export const articleReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_ARTICLES:
-      return state;
+      return { ...state, articles: payload };
     default:
       return state;
   }
