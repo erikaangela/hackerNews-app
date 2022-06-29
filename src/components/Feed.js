@@ -5,7 +5,6 @@ import { setArticles } from "../actions";
 import Articles from "./Articles";
 
 const Feed = () => {
-  const articles = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const fetchArticles = async () => {
@@ -14,7 +13,7 @@ const Feed = () => {
         "https://newsapi.org/v2/top-headlines?country=us&apiKey=0cb60408b3164a208d87a23aed538419"
       )
       .catch((err) => {
-        console.log("Err", err);
+        console.log("Error", err);
       });
     dispatch(setArticles(response.data));
   };
@@ -22,10 +21,9 @@ const Feed = () => {
   useEffect(() => {
     fetchArticles();
   }, []);
-  console.log("Articles :", articles);
 
   return (
-    <div className="ui items">
+    <div>
       <Articles />
     </div>
   );
