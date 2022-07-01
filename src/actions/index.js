@@ -7,9 +7,9 @@ export const setArticles = (articles) => {
   };
 };
 
-export const selectedArticle = (article) => {
+export const setPopArticles = (articles) => {
   return {
-    type: ActionTypes.SELECTED_ARTICLE,
-    payload: article,
+    type: ActionTypes.SET_POP_ARTICLES,
+    payload: articles,
   };
 };

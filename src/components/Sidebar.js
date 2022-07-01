@@ -1,16 +1,30 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux/es/exports";
+import { setPopArticles } from "../actions";
 import PopularArticles from "./PopularArticles";
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+
+  const fetchArticles = async () => {
+    const response = await axios
+      .get(
+        "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=0cb60408b3164a208d87a23aed538419"
+      )
+      .catch((err) => {
+        console.log("Error", err);
+      });
+    dispatch(setPopArticles(response.data));
+  };
+
+  useEffect(() => {
+    fetchArticles();
+  }, []);
+
   return (
-    <div className="ui large middle aligned animated list">
-      <h3 className="ui header">Popular This Week</h3>
-      <PopularArticles description="This is the first article." />
-      <PopularArticles description="This is the second article." />
-      <PopularArticles description="This is the third article." />
-      <PopularArticles description="This is the fourth article." />
-      <PopularArticles description="This is the fifth article." />
-      <PopularArticles description="This is the sixth article." />
+    <div>
+      <PopularArticles />
     </div>
   );
 };

@@ -12,7 +12,7 @@ class App extends React.Component {
           <div>
             <Header />
             <div className="ui internally celled grid">
-              <div className="eleven wide column">
+              <div className="twelve wide column">
                 <Routes>
                   <Route path="/" exact element={<Feed />} />
                   <Route>404 Not Found</Route>
