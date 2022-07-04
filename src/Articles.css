@@ -2,3 +2,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.popular.item.centered {
+  padding-bottom: 15px;
+}
+
+.popular.content {
+  padding-top: 5px;
+}

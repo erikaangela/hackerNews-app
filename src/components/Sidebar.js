@@ -10,7 +10,7 @@ const Sidebar = () => {
   const fetchArticles = async () => {
     const response = await axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=0cb60408b3164a208d87a23aed538419"
+        "https://newsapi.org/v2/top-headlines?country=us&apiKey=0cb60408b3164a208d87a23aed538419"
       )
       .catch((err) => {
         console.log("Error", err);

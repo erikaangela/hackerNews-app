@@ -1,0 +1,17 @@
+.ui.container {
+  padding: 10;
+  width: 100%;
+}
+
+.ui.internally.celled.grid {
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ten.wide.column {
+  margin-left: 50px;
+}
+
+.four.wide.column {
+  margin-right: 50px;
+}

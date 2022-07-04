@@ -1,0 +1,38 @@
+.row.dk-blue {
+  background-color: #4f7fa9;
+  width: 100%;
+}
+
+.row.lt-blue {
+  background-color: #628db2;
+}
+
+.huge.header,
+a {
+  color: white;
+}
+
+.main.ui.huge.header {
+  padding-left: 70px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.ui.right.floated.yellow.button,
+.ui.secondary.menu {
+  margin-top: 5px;
+  margin-right: 70px;
+}
+
+.btn-text,
+.mail.icon {
+  color: black;
+}
+
+.topper {
+  padding-bottom: 0px;
+}
+
+.home {
+  color: black;
+}

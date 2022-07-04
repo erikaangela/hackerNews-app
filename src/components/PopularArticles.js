@@ -4,14 +4,22 @@ import "../Articles.css";
 
 const PopularArticles = () => {
   const articles = useSelector((state) => state.popArticles.articles.articles);
-  const renderSidebar = (articles || []).map((article) => {
+  const renderSidebar = (articles || []).slice(0, 6).map((article) => {
     const { title, url, urlToImage } = article;
 
     return (
-      <div className="item centered" key={title}>
+      <div className="popular item centered" key={title}>
         <a href={url} target="_blank">
-          <img className="ui large rounded image" src={urlToImage} />
-          <div className="content">
+          {urlToImage === null ? (
+            <img
+              className="ui large rounded image"
+              src="https://semantic-ui.com/images/wireframe/image.png"
+              alt="No image"
+            />
+          ) : (
+            <img className="ui large rounded image" src={urlToImage} />
+          )}
+          <div className="popular content">
             <div className="header">{title}</div>
           </div>
         </a>
@@ -21,7 +29,7 @@ const PopularArticles = () => {
 
   return (
     <div className="ui middle aligned animated list">
-      <h3 className="ui header">Popular This Week</h3>
+      <h3 className="popular ui header">Popular This Week</h3>
       {renderSidebar}
     </div>
   );
