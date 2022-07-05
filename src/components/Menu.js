@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Search from "./Search";
 import "../Header.css";
 
 const Menu = () => {
@@ -19,14 +18,9 @@ const Menu = () => {
       <a className="disabled item">Contact</a>
       <div className="right menu">
         <div className="item">
-          <div className="ui icon input">
-            <input
-              type="text"
-              placeholder="Search..."
-              // onChange={(e) => this.props.setSearch(e.target.value)}
-            />
-            <i className="search link icon"></i>
-          </div>
+          <Link to="/search">
+            <button className="ui button">Search</button>
+          </Link>
         </div>
         <div className="item">
           <div className="ui icon buttons">

@@ -13,7 +13,7 @@ const Sidebar = () => {
         "https://newsapi.org/v2/top-headlines?country=us&apiKey=0cb60408b3164a208d87a23aed538419"
       )
       .catch((err) => {
-        console.log("Error", err);
+        console.log("Sidebar Error", err);
       });
     dispatch(setPopArticles(response.data));
   };

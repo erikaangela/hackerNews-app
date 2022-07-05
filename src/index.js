@@ -5,7 +5,6 @@ import { createStore } from "redux";
 
 import App from "./components/App";
 import reducers from "./reducers";
-import "./responsive.css";
 
 const store = createStore(
   reducers,
