@@ -1,17 +1,23 @@
-# Project Goals
+# The Hacker News App
 
-Build a HackerNews.com clone using the News API.
-Must include main news feed, search functionality, and "Popular This Week" section.
+A clone of [HackerNews.com](https://thehackernews.com/) using the [News API](https://newsapi.org/). Includes a main news feed featuring top headlines for "technology", a "Popular This Week" section, and a search functionality.
 
-Getting Started
+### Project Goals
 
-1. At the minimum, there should be three components: searchbar, main news feed, and popular news on the side.
-2. The main thing you'll be doing in this project is making GET requests to get information from the News API, and then displaying the results in your component.
-3. You'll make two different API requests, one to get the top news on the site (using the "top-headlines" endpoint in the documentation), and one to search everything about whatever search input the user wants to search by, using the "everything" endpoint.
-4. To search whatever the user inputs, you can use the "everything" endpoint/url and pass in a value for "q" that's in the url string.
-5. That "q" stands for "query" and the value you set it equal to is what the API is going to return search results for, so that's where you put the search value you get from the user.
-6. Keep in mind, when the app first loads, there should be news information displayed already, so you can put a default value for "q" when using the "everything" endpoint with whatever topic you want on the homepage when your app first loads. Google "javascript default parameters".
-7. Also, when clicks to view an article from your search results, you should open up the url to read the full article in a new tab.
+Apply React and Redux. Making GET requests to the News API to display within app.
+
+### How the app works
+
+Upon the initial load, a main news feed and popular news sidebar is shown. Each article features the title, date, author, source, and description - all deriving from the API; clicking on any article always opens the original article in a new tab. 
+
+Clicking the "Search" button will take you to another page that features an input with a default search term of "programming." Type in any term(s) and the feed will update to show the first 20 results using the News API's "everything" endpoint.
+
+Navigate back to the main page by clicking the "Home" button or the Hacker News logo.
+
+### Remaining Backlog Items
+
+* Adjust for mobile responsiveness.
+* Add pagination.
 
 # Getting Started with Create React App
 
