@@ -14,6 +14,14 @@ Clicking the "Search" button will take you to another page that features an inpu
 
 Navigate back to the main page by clicking the "Home" button or the Hacker News logo.
 
+### Technologies Used
+
+* JavaScript
+* HTML/CSS
+* React JS
+* Redux
+* APIs
+
 ### Remaining Backlog Items
 
 * Adjust for mobile responsiveness.
