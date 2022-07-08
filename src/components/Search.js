@@ -18,6 +18,7 @@ const Search = () => {
   }, [term]);
 
   useEffect(() => {
+    // if (term !== ""){}
     const search = async () => {
       const { data } = await axios
         .get(
@@ -26,15 +27,15 @@ const Search = () => {
         .catch((err) => {
           console.log("Search Error", err);
         });
-
-      setResults(data.articles);
+      console.log(data.articles);
+      console.log(setResults(data.articles));
     };
 
     search();
 
-    return () => {
-      setTerm("");
-    };
+    // return () => {
+    //   setTerm("");
+    // };
   }, [debouncedTerm]);
 
   const renderedResults = (results || []).slice(0, 20).map((result) => {
@@ -83,7 +84,7 @@ const Search = () => {
           onChange={(e) => setTerm(e.target.value)}
           placeholder="Search..."
         />
-        <i className="search link icon"></i>
+        <i className="search link icon" onClick={setTerm(() => "")}></i>
       </div>
       <p className="results number">Showing 20 out of 20 results</p>
       <div className="ui divided items">{renderedResults}</div>
