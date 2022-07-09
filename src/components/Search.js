@@ -18,24 +18,24 @@ const Search = () => {
   }, [term]);
 
   useEffect(() => {
-    // if (term !== ""){}
-    const search = async () => {
-      const { data } = await axios
-        .get(
-          `https://newsapi.org/v2/everything?q=${term}&apiKey=0cb60408b3164a208d87a23aed538419`
-        )
-        .catch((err) => {
-          console.log("Search Error", err);
-        });
-      console.log(data.articles);
-      console.log(setResults(data.articles));
+    if (term !== "") {
+      const search = async () => {
+        const { data } = await axios
+          .get(
+            `https://newsapi.org/v2/everything?q=${term}&apiKey=0cb60408b3164a208d87a23aed538419`
+          )
+          .catch((err) => {
+            console.log("Search Error", err);
+          });
+        console.log(data.articles);
+        console.log(setResults(data.articles));
+      };
+      search();
+    }
+
+    return () => {
+      setTerm("");
     };
-
-    search();
-
-    // return () => {
-    //   setTerm("");
-    // };
   }, [debouncedTerm]);
 
   const renderedResults = (results || []).slice(0, 20).map((result) => {
@@ -84,7 +84,7 @@ const Search = () => {
           onChange={(e) => setTerm(e.target.value)}
           placeholder="Search..."
         />
-        <i className="search link icon" onClick={setTerm(() => "")}></i>
+        <i className="search link icon"></i>
       </div>
       <p className="results number">Showing 20 out of 20 results</p>
       <div className="ui divided items">{renderedResults}</div>
