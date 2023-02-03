@@ -16,12 +16,10 @@ const Menu = () => {
       <a className="item">Malware</a>
       <a className="item">Offers</a>
       <a className="item">Contact</a>
-      <div className="right menu">
-        <div className="item">
-          <Link to="/search">
-            <button className="ui button">Search</button>
-          </Link>
-        </div>
+      <div className="item">
+        <Link to="/search">
+          <button className="ui blue button">Search</button>
+        </Link>
       </div>
     </div>
   );

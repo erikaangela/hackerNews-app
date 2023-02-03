@@ -5,15 +5,13 @@ import "../Header.css";
 const HeaderTopper = () => {
   return (
     <div className="ui secondary menu">
-      <div className="right menu">
-        <div className="item">
-          <a className="disabled">Follow us</a>
-        </div>
-        <Icons icon="facebook" />
-        <Icons icon="twitter" />
-        <Icons icon="linkedin" />
-        <Icons icon="youtube" />
+      <div className="item">
+        <a className="disabled">Follow us</a>
       </div>
+      <Icons className="item" icon="facebook" />
+      <Icons className="item" icon="twitter" />
+      <Icons className="item" icon="linkedin" />
+      <Icons className="item" icon="youtube" />
     </div>
   );
 };
