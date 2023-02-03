@@ -26,9 +26,9 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="row">
-        <Menu />
-      </div>
+      {/* <div className="row"> */}
+      <Menu />
+      {/* </div> */}
     </div>
   );
 };
