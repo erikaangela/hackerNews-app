@@ -10,12 +10,12 @@ const Menu = () => {
           Home
         </Link>
       </div>
-      <a className="item">Data Breaches</a>
-      <a className="item">Cyber Attacks</a>
-      <a className="item">Vulnerabilities</a>
-      <a className="item">Malware</a>
-      <a className="item">Offers</a>
-      <a className="item">Contact</a>
+      <div className="item">Data Breaches</div>
+      <div className="item">Cyber Attacks</div>
+      <div className="item">Vulnerabilities</div>
+      <div className="item">Malware</div>
+      <div className="item">Offers</div>
+      <div className="item">Contact</div>
       <div className="item">
         <Link to="/search">
           <button className="ui blue button">Search</button>

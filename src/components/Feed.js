@@ -23,9 +23,9 @@ const Feed = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Articles />
-    </div>
+    </>
   );
 };
 

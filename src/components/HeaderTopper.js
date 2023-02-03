@@ -1,6 +1,5 @@
 import React from "react";
 import Icons from "./Icons";
-import "../Header.css";
 
 const HeaderTopper = () => {
   return (
@@ -8,10 +7,10 @@ const HeaderTopper = () => {
       <div className="item">
         <a className="disabled">Follow us</a>
       </div>
-      <Icons className="item" icon="facebook" />
-      <Icons className="item" icon="twitter" />
-      <Icons className="item" icon="linkedin" />
-      <Icons className="item" icon="youtube" />
+      <Icons icon="facebook" />
+      <Icons icon="twitter" />
+      <Icons icon="linkedin" />
+      <Icons icon="youtube" />
     </div>
   );
 };

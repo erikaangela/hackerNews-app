@@ -10,7 +10,7 @@ const Header = () => {
       <div className="row dk-blue">
         <HeaderTopper />
       </div>
-      <div className="center aligned two column row lt-blue">
+      <div className="two column row lt-blue">
         <div className="column">
           <Link to="/">
             <img

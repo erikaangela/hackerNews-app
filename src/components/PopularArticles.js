@@ -28,7 +28,7 @@ const PopularArticles = () => {
   });
 
   return (
-    <div className="ui middle aligned animated list">
+    <div className="ui animated list">
       <h3 className="popular ui header">Popular This Week</h3>
       {renderSidebar}
     </div>

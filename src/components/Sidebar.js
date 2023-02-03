@@ -23,9 +23,9 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <PopularArticles />
-    </div>
+    </>
   );
 };
 
