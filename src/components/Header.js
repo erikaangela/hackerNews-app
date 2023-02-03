@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Menu from "./Menu";
 import HeaderTopper from "./HeaderTopper";
 import "../Header.css";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -26,9 +27,12 @@ const Header = () => {
           </button>
         </div>
       </div>
-      {/* <div className="row"> */}
-      <Menu />
-      {/* </div> */}
+      <div className="row computer only">
+        <Menu />
+      </div>
+      <div className="row mobile only">
+        <MobileMenu />
+      </div>
     </div>
   );
 };
