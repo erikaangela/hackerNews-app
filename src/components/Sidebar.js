@@ -22,11 +22,7 @@ const Sidebar = () => {
     fetchArticles();
   }, []);
 
-  return (
-    <>
-      <PopularArticles />
-    </>
-  );
+  return <PopularArticles />;
 };
 
 export default Sidebar;

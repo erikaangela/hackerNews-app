@@ -22,11 +22,7 @@ const Feed = () => {
     fetchArticles();
   }, []);
 
-  return (
-    <>
-      <Articles />
-    </>
-  );
+  return <Articles />;
 };
 
 export default Feed;
