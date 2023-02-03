@@ -13,7 +13,7 @@ class App extends React.Component {
         <Router>
           <div>
             <Header />
-            <div className="ui internally celled grid">
+            <div className="ui grid container">
               <div className="ten wide column">
                 <Routes>
                   <Route path="/" exact element={<Feed />} />
