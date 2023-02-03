@@ -6,14 +6,12 @@ import "../Header.css";
 
 const Header = () => {
   return (
-    <div className="ui hdr centered grid">
-      <div className="row dk-blue">
-        <div className="header-topper column">
-          <HeaderTopper />
-        </div>
+    <div className="ui stackable grid container">
+      <div className="center aligned row dk-blue">
+        <HeaderTopper />
       </div>
-      <div className="four column row lt-blue">
-        <div className="left floated column">
+      <div className="center aligned two column row lt-blue">
+        <div className="left floated right aligned column">
           <Link to="/">
             <img
               className="main ui huge header logo image"
@@ -21,14 +19,14 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className="right floated column">
+        <div className="right floated left aligned column">
           <button className="ui right floated yellow button">
             <i className="mail icon"></i>
             <span className="btn-text">Subscribe to Newsletter</span>
           </button>
         </div>
       </div>
-      <div className="row">
+      <div className="center aligned row">
         <Menu />
       </div>
     </div>
