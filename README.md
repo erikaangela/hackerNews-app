@@ -24,7 +24,7 @@ Navigate back to the main page by clicking the "Home" button or the Hacker News 
 
 ### Remaining Backlog Items
 
-* Adjust for mobile responsiveness.
+* ~~Adjust for mobile responsiveness.~~
 * Add pagination.
 
 ## Quick Start
