@@ -1,6 +1,6 @@
 # The Hacker News App
 
-A clone of [HackerNews.com](https://thehackernews.com/) using the [News API](https://newsapi.org/). Includes a main news feed featuring top headlines for "technology", a "Popular This Week" section, and a search functionality.
+A mockup of [HackerNews.com](https://thehackernews.com/) using the [News API](https://newsapi.org/). Includes a main news feed featuring top headlines for "technology", a "Popular This Week" section, and a search functionality.
 
 ### Project Goals
 
